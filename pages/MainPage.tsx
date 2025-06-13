@@ -23,13 +23,13 @@ const mockNewsData = [
     quote: 'Sáng ngày 13/5/2024, tại Khu dân cư hạ lưu sông Trà Bồng...',
   },
   {
-    image: '/news-images/news4.jpg',
+    image: '/news-images/news5.jpg',
     date: 'General News',
     title: 'Hòa Phát không bao giờ dừng lại và luôn tiến về phía trước',
     quote: 'Ông Trần Đình Long - Chủ tịch HĐQT Tập đoàn Hòa Phát',
   },
   {
-    image: '/news-images/news5.jpg',
+    image: '/news-images/news4.jpg',
     date: 'HPG News',
     title: '4 năm, 1 Khu liên hợp công suất 5 triệu tấn trên năm và 11,000 CBCNV',
     quote: 'A testament to growth and dedication.',
