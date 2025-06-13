@@ -1,6 +1,46 @@
 import * as React from 'react';
-import { Box, Typography, Container, Divider, Fade, Slide } from '@mui/material';
+import { Box, Typography, Container, Divider, Fade, Slide, Grid } from '@mui/material';
 import Header from '../components/Header';
+import NewsCard from '../components/NewsCard'; // Import the new component
+
+const mockNewsData = [
+  {
+    image: '/news-images/news1.jpg', // Example path
+    date: '11/10/2024 14:05',
+    title: 'Hòa Phát hỗ trợ xây dựng hơn 1,500 căn nhà cho người nghèo trên cả nước',
+    quote: 'Hưởng ứng lời kêu gọi của Chính phủ...',
+  },
+  {
+    image: '/news-images/news2.jpg',
+    date: '04/03/2025 12:30',
+    title: 'Hòa Phát nộp ngân sách hơn 13,400 tỷ đồng, cao nhất từ trước đến nay',
+    quote: 'Năm 2024, Tập đoàn Hòa Phát đã nộp vào ngân sách Nhà nước...',
+  },
+  {
+    image: '/news-images/news3.jpg',
+    date: '15/05/2024 09:23',
+    title: 'Khởi công xây dựng dự án Trường Tiểu học Bình Đông huyện Bình Sơn',
+    quote: 'Sáng ngày 13/5/2024, tại Khu dân cư hạ lưu sông Trà Bồng...',
+  },
+  {
+    image: '/news-images/news4.jpg',
+    date: 'General News',
+    title: 'Hòa Phát không bao giờ dừng lại và luôn tiến về phía trước',
+    quote: 'Ông Trần Đình Long - Chủ tịch HĐQT Tập đoàn Hòa Phát',
+  },
+  {
+    image: '/news-images/news5.jpg',
+    date: 'HPG News',
+    title: '4 năm, 1 Khu liên hợp công suất 5 triệu tấn trên năm và 11,000 CBCNV',
+    quote: 'A testament to growth and dedication.',
+  },
+  {
+    image: '/news-images/news6.jpg',
+    date: 'HPG News',
+    title: 'Thép cuộn cán nóng: Át chủ bài tạo nên tầm vóc mới cho Hòa Phát',
+    quote: 'Innovation driving the future of steel.',
+  },
+];
 
 export default function MainPage() {
   const [loaded, setLoaded] = React.useState(false);
@@ -8,6 +48,11 @@ export default function MainPage() {
   React.useEffect(() => {
     setLoaded(true);
   }, []);
+
+  const handleNewsClick = (title: string) => {
+    // In a real app, you would navigate to a new page, e.g., with react-router-dom
+    console.log(`Navigating to news article: ${title}`);
+  };
 
   return (
     <Box>
@@ -64,11 +109,33 @@ export default function MainPage() {
           {/* --- ANIMATION WRAPPERS END --- */}
         </Container>
       </Box>
-      <Box sx={{ height: '100vh' }}> {/* Adjusted from 200vh for a more reasonable scroll */}
-          <Typography variant="h5" sx={{ mt: 4, p: 3 }}>
-            More Content Down Here...
+      
+            <Box sx={{ py: 8, backgroundColor: '#f4f6f8' }}>
+        <Container maxWidth="lg">
+          <Typography
+            variant="h3"
+            component="h2"
+            align="center"
+            sx={{ fontWeight: 'bold', mb: 6 }}
+          >
+            Latest News
           </Typography>
-        </Box>
+          <Grid container spacing={4}>
+            {mockNewsData.map((news, index) => (
+              <Grid key={index} size={{xs: 12, sm: 6, md: 4}}>
+                <NewsCard
+                  image={news.image}
+                  date={news.date}
+                  title={news.title}
+                  quote={news.quote}
+                  onClick={() => handleNewsClick(news.title)}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </Box>
+
     </Box>
   );
 }
