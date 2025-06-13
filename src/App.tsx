@@ -1,4 +1,4 @@
-import * as React from 'react';
+// import * as React from 'react';
 import { CssBaseline, Box } from '@mui/material'; // <-- Import Box
 import MainPage from '../pages/MainPage';
 
