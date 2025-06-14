@@ -8,6 +8,7 @@ import AboutUsPage from '../pages/AboutUsPage';
 import CustomerPage from '../pages/CustomerPage';
 import NewsPage from '../pages/NewsPage';
 import AdvisorsPage from '../pages/AdvisorsPage';
+import PortfolioPage from '../pages/PortfolioPage';
 
 const ScrollToAnchor = () => {
   const { pathname, hash } = useLocation();
@@ -62,7 +63,7 @@ export default function App() {
               <Route path="/news/:articleId" element={<NewsPage />} />
               <Route path="/customer" element={<CustomerPage />} />
               <Route path="/advisors" element={<AdvisorsPage />} />
-              {/* <Route path="/portfolio-investment" element={<PortfolioPage />} /> */}
+              <Route path="/portfolio-investment" element={<PortfolioPage />} />
             </Routes>
           </Box>
           <Footer /> {/* Add the Footer at the end */}
