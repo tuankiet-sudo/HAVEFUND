@@ -5,24 +5,40 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PopoverButton from './PopoverButton';
+import { Link as RouterLink } from 'react-router-dom';
 
 // Mock data for the popover menus
 const navLinks = [
   {
     buttonText: 'About us',
-    items: [{ label: 'Our Company' }, { label: 'Our Services' }],
+    path: '/about-us',
+    items: [
+      { label: 'Our Company', anchorId: 'our-company' }, 
+      { label: 'Our Services', anchorId: 'our-services' }
+    ],
   },
   {
     buttonText: 'Customer',
-    items: [{ label: 'Customer Demographics' }, { label: 'Responsible for Client' }],
+    path: '/customer',
+    items: [
+      { label: 'Customer Demographics', anchorId: 'customer-demographics' }, 
+      { label: 'Responsible for Client', anchorId: 'responsible-for-client' }
+    ],
   },
   {
     buttonText: 'Advisors',
-    items: [{ label: 'Project Team Structure' }, { label: 'Responsibility of Advisors' }],
+    path: '/advisors',
+    items: [
+      { label: 'Project Team Structure', anchorId: 'project-team-structure' }, 
+      { label: 'Responsibility of Advisors', anchorId: 'responsibility-of-advisors' }
+    ],
   },
   {
     buttonText: 'Portfolio Investment',
-    items: [ { label: 'Mr. Minh\'s Project' }],
+    path: '/portfolio-investment',
+    items: [
+      { label: 'Mr. Minh\'s Project', anchorId: 'minhs-project' }
+    ],
   },
 ];
 
@@ -69,18 +85,19 @@ export default function Header() {
         }}
       >
         {/* Logo */}
-        <Box
-          component="img"
-          src="/Logo.png" // Path to the image in the 'public' folder
-          alt="Company Logo"
-          sx={{
-            height: isScrolled ? '50px' : '80px', // Adjusted logo heights
-            transition: 'height 0.3s ease-in-out', // Smooth transition for logo size
-            flexShrink: 0,
-            ml: 10,
-          }}
-        />
-
+        <RouterLink to="/">
+          <Box
+            component="img"
+            src="/Logo.png" // Path to the image in the 'public' folder
+            alt="Company Logo"
+            sx={{
+              height: isScrolled ? '50px' : '80px', // Adjusted logo heights
+              transition: 'height 0.3s ease-in-out', // Smooth transition for logo size
+              flexShrink: 0,
+              ml: 10,
+            }}
+          />
+        </RouterLink>
         {/* This Box is a spacer */}
         <Box sx={{ flexGrow: 1 }} />
 
@@ -141,7 +158,8 @@ export default function Header() {
               <PopoverButton
                 key={link.buttonText}
                 buttonText={link.buttonText}
-                menuItems={link.items.map(item => ({...item, onClick: () => {console.log(`${item.label} clicked`)} }))}
+                menuItems={link.items}
+                path={link.path} // Use the path for navigation
               />
             ))}
           </Box>

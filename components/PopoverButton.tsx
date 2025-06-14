@@ -6,13 +6,15 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import Box from '@mui/material/Box';
 import Grow from '@mui/material/Grow';
+import { Link as RouterLink } from 'react-router-dom'; 
 
 interface PopoverButtonProps {
   buttonText: string;
-  menuItems: { label: string; onClick: () => void }[];
+  path: string; // Add path for page navigation
+  menuItems: { label: string; anchorId: string }[]; // Update items to include anchorId
 }
 
-export default function PopoverButton({ buttonText, menuItems }: PopoverButtonProps) {
+export default function PopoverButton({ buttonText, path, menuItems }: PopoverButtonProps) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
   const handleMouseEnter = (event: React.MouseEvent<HTMLElement>) => {
@@ -28,6 +30,8 @@ export default function PopoverButton({ buttonText, menuItems }: PopoverButtonPr
   return (
     <Box onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} sx={{ display: 'inline-block' }}>
       <Button
+        component={RouterLink} // Use RouterLink for navigation
+        to={path} // The destination path
         aria-haspopup="true"
         sx={{ color: 'black', textTransform: 'none', fontSize: '1rem' }}
       >
@@ -38,7 +42,7 @@ export default function PopoverButton({ buttonText, menuItems }: PopoverButtonPr
         anchorEl={anchorEl}
         placement="bottom-start"
         transition
-        disablePortal // Important for the hover logic to work with the wrapper Box
+        disablePortal
       >
         {({ TransitionProps, placement }) => (
           <Grow
@@ -53,10 +57,9 @@ export default function PopoverButton({ buttonText, menuItems }: PopoverButtonPr
                 {menuItems.map((item) => (
                   <MenuItem
                     key={item.label}
-                    onClick={() => {
-                      item.onClick();
-                      handleMouseLeave(); // Close menu on click
-                    }}
+                    component={RouterLink} // Each menu item is also a link
+                    to={`${path}#${item.anchorId}`} // Link to the page and the specific anchor
+                    onClick={handleMouseLeave} // Close menu on click
                   >
                     {item.label}
                   </MenuItem>

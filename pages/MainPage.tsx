@@ -1,46 +1,51 @@
 import * as React from 'react';
 import { Box, Typography, Container, Divider, Fade, Slide, Grid } from '@mui/material';
-import Header from '../components/Header';
-import NewsCard from '../components/NewsCard'; // Import the new component
+// import Header from '../components/Header';
+import NewsCard from '../components/NewsCard';
 
+// Updated mock data to include card variants and colors
 const mockNewsData = [
   {
-    image: '/news-images/news1.jpg', // Example path
+    variant: 'normal',
+    image: '/news-images/news1.jpg',
     date: '11/10/2024 14:05',
     title: 'Hòa Phát hỗ trợ xây dựng hơn 1,500 căn nhà cho người nghèo trên cả nước',
     quote: 'Hưởng ứng lời kêu gọi của Chính phủ...',
   },
   {
+    variant: 'small',
+    bgColor: '#fff3cd', // A light yellow, inspired by the image
+    date: 'Ông Trần Đình Long',
+    title: 'Hòa Phát không bao giờ dừng lại và luôn tiến về phía trước',
+  },
+  {
+    variant: 'normal',
     image: '/news-images/news2.jpg',
     date: '04/03/2025 12:30',
     title: 'Hòa Phát nộp ngân sách hơn 13,400 tỷ đồng, cao nhất từ trước đến nay',
-    quote: 'Năm 2024, Tập đoàn Hòa Phát đã nộp vào ngân sách Nhà nước...',
+    quote: 'Năm 2024, Tập đoàn Hòa Phát đã nộp vào...',
   },
   {
-    image: '/news-images/news3.jpg',
-    date: '15/05/2024 09:23',
-    title: 'Khởi công xây dựng dự án Trường Tiểu học Bình Đông huyện Bình Sơn',
-    quote: 'Sáng ngày 13/5/2024, tại Khu dân cư hạ lưu sông Trà Bồng...',
-  },
-  {
-    image: '/news-images/news5.jpg',
-    date: 'General News',
-    title: 'Hòa Phát không bao giờ dừng lại và luôn tiến về phía trước',
-    quote: 'Ông Trần Đình Long - Chủ tịch HĐQT Tập đoàn Hòa Phát',
-  },
-  {
-    image: '/news-images/news4.jpg',
+    variant: 'small',
+    bgColor: '#cce5ff', // A light blue, inspired by the image
     date: 'HPG News',
     title: '4 năm, 1 Khu liên hợp công suất 5 triệu tấn trên năm và 11,000 CBCNV',
-    quote: 'A testament to growth and dedication.',
   },
   {
-    image: '/news-images/news6.jpg',
+    variant: 'normal',
+    image: '/news-images/news3.jpg',
+    date: '15/05/2024 09:23',
+    title: 'Khởi công xây dựng dự án Trường Tiểu học Bình Đông',
+    quote: 'Sáng ngày 13/5/2024, tại Khu dân cư...',
+  },
+  {
+    variant: 'small',
+    bgColor: '#d4edda', // A light green
     date: 'HPG News',
     title: 'Thép cuộn cán nóng: Át chủ bài tạo nên tầm vóc mới cho Hòa Phát',
-    quote: 'Innovation driving the future of steel.',
   },
 ];
+
 
 export default function MainPage() {
   const [loaded, setLoaded] = React.useState(false);
@@ -50,15 +55,12 @@ export default function MainPage() {
   }, []);
 
   const handleNewsClick = (title: string) => {
-    // In a real app, you would navigate to a new page, e.g., with react-router-dom
     console.log(`Navigating to news article: ${title}`);
   };
 
   return (
     <Box>
-      <Header />
-
-      {/* Main content area with background image */}
+      {/* Introduction Section */}
       <Box
         component="main"
         sx={{
@@ -67,14 +69,12 @@ export default function MainPage() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           display: 'flex',
-          alignItems: 'center', // Center the content vertically
-          pt: '110px', // Add padding to push content below the initial header
-          pb: 4, // Add some bottom padding
+          alignItems: 'center',
+          pt: '110px',
+          pb: 4,
         }}
       >
-        {/* Container to constrain the width of the text content */}
         <Container maxWidth="md">
-          {/* --- ANIMATION WRAPPERS START --- */}
           <Slide direction="up" in={loaded} mountOnEnter unmountOnExit timeout={1000}>
             <Fade in={loaded} timeout={1500}>
               <Box
@@ -85,18 +85,10 @@ export default function MainPage() {
                   boxShadow: 3,
                 }}
               >
-                <Typography
-                  variant="h3"
-                  component="h1"
-                  sx={{ fontWeight: 'bold', color: '#0D47A1' /* A deep blue */ }}
-                >
+                <Typography variant="h3" component="h1" sx={{ fontWeight: 'bold', color: '#0D47A1' }}>
                   INTRODUCTION
                 </Typography>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ color: '#1565C0', letterSpacing: '1px', mb: 2 }}
-                >
+                <Typography variant="h6" component="h2" sx={{ color: '#1565C0', letterSpacing: '1px', mb: 2 }}>
                   INVESTMENT POLICY STATEMENT
                 </Typography>
                 <Divider sx={{ mb: 3 }} />
@@ -106,35 +98,53 @@ export default function MainPage() {
               </Box>
             </Fade>
           </Slide>
-          {/* --- ANIMATION WRAPPERS END --- */}
         </Container>
       </Box>
-      
-            <Box sx={{ py: 8, backgroundColor: '#f4f6f8' }}>
+
+      {/* --- NEW NEWS SECTION START --- */}
+      <Box sx={{ py: 8, backgroundColor: '#f4f6f8' }}>
         <Container maxWidth="lg">
-          <Typography
-            variant="h3"
-            component="h2"
-            align="center"
-            sx={{ fontWeight: 'bold', mb: 6 }}
-          >
-            Latest News
-          </Typography>
-          <Grid container spacing={4}>
-            {mockNewsData.map((news, index) => (
-              <Grid key={index} size={{xs: 12, sm: 6, md: 4}}>
-                <NewsCard
-                  image={news.image}
-                  date={news.date}
-                  title={news.title}
-                  quote={news.quote}
-                  onClick={() => handleNewsClick(news.title)}
-                />
-              </Grid>
-            ))}
-          </Grid>
+          {/* Custom Section Title */}
+          <Box sx={{ display: 'flex', justifyContent: 'flex-start', mb: 6 }}>
+              <Box
+                sx={{
+                  display: 'inline-block',
+                  backgroundColor: '#0D47A1', // Blue color from image
+                  color: 'white',
+                  px: 4,
+                  py: 1.5,
+                  position: 'relative',
+                  clipPath: 'polygon(0 0, 100% 0, calc(100% - 30px) 100%, 0 100%)',
+                }}
+              >
+                <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold' }}>
+                  Latest News
+                </Typography>
+              </Box>
+          </Box>
+          
+          {/* White container for the news cards */}
+          <Box sx={{ backgroundColor: 'white', p: {xs: 2, md: 4}, borderRadius: 2, boxShadow: 1 }}>
+            <Grid container spacing={4}>
+              {mockNewsData.map((news, index) => (
+                // Adjusting grid size to make cards smaller
+                <Grid key={index} size= {{xs: 12, sm: 6, md: news.variant === 'normal' ? 4 : 4}}>
+                  <NewsCard
+                    variant={news.variant === 'small' ? 'small' : 'normal'}
+                    bgColor={news.bgColor}
+                    image={news.image}
+                    date={news.date}
+                    title={news.title}
+                    quote={news.quote}
+                    onClick={() => handleNewsClick(news.title)}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
         </Container>
       </Box>
+      {/* --- NEW NEWS SECTION END --- */}
 
     </Box>
   );
