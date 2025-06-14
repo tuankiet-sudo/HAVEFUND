@@ -5,49 +5,6 @@ import NewsCard from '../components/NewsCard';
 import { useNavigate } from 'react-router-dom';
 import { articles } from '../src/data/articles';
 
-// Updated mock data to include card variants and colors
-const mockNewsData = [
-  {
-    variant: 'normal',
-    image: '/news-images/news1.jpg',
-    date: '11/10/2024 14:05',
-    title: 'Hòa Phát hỗ trợ xây dựng hơn 1,500 căn nhà cho người nghèo trên cả nước',
-    quote: 'Hưởng ứng lời kêu gọi của Chính phủ...',
-  },
-  {
-    variant: 'small',
-    bgColor: '#fff3cd', // A light yellow, inspired by the image
-    date: 'Ông Trần Đình Long',
-    title: 'Hòa Phát không bao giờ dừng lại và luôn tiến về phía trước',
-  },
-  {
-    variant: 'normal',
-    image: '/news-images/news2.jpg',
-    date: '04/03/2025 12:30',
-    title: 'Hòa Phát nộp ngân sách hơn 13,400 tỷ đồng, cao nhất từ trước đến nay',
-    quote: 'Năm 2024, Tập đoàn Hòa Phát đã nộp vào...',
-  },
-  {
-    variant: 'small',
-    bgColor: '#cce5ff', // A light blue, inspired by the image
-    date: 'HPG News',
-    title: '4 năm, 1 Khu liên hợp công suất 5 triệu tấn trên năm và 11,000 CBCNV',
-  },
-  {
-    variant: 'normal',
-    image: '/news-images/news3.jpg',
-    date: '15/05/2024 09:23',
-    title: 'Khởi công xây dựng dự án Trường Tiểu học Bình Đông',
-    quote: 'Sáng ngày 13/5/2024, tại Khu dân cư...',
-  },
-  {
-    variant: 'small',
-    bgColor: '#d4edda', // A light green
-    date: 'HPG News',
-    title: 'Thép cuộn cán nóng: Át chủ bài tạo nên tầm vóc mới cho Hòa Phát',
-  },
-];
-
 // Helper component for animating each card individually
 const AnimatedCard = ({ children, index }: { children: React.ReactNode; index: number }) => {
   const { ref, inView } = useInView({
