@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Box, Typography, Container, Divider, Fade, Slide, Grid } from '@mui/material';
-// import Header from '../components/Header';
+import { useInView } from 'react-intersection-observer';
 import NewsCard from '../components/NewsCard';
 
 // Updated mock data to include card variants and colors
@@ -46,6 +46,34 @@ const mockNewsData = [
   },
 ];
 
+// Helper component for animating each card individually
+const AnimatedCard = ({ children, index }: { children: React.ReactNode; index: number }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1, // Animate when 10% of the card is visible
+    delay: 150 * (index % 3), // Stagger animations for each row
+  });
+
+  let direction: 'up' | 'down' | 'left' | 'right' = 'up';
+  switch (index) {
+    case 0: case 3: direction = 'right'; break;
+    case 2: case 5: direction = 'left'; break;
+    case 1: direction = 'down'; break;
+    case 4: direction = 'up'; break;
+    default: direction = 'up';
+  }
+
+  return (
+    <Box ref={ref}>
+      <Slide direction={direction} in={inView} timeout={800}>
+        <Fade in={inView} timeout={1200}>
+          {/* The extra div is important for the transitions to work correctly */}
+          <Box>{children}</Box>
+        </Fade>
+      </Slide>
+    </Box>
+  );
+};
 
 export default function MainPage() {
   const [loaded, setLoaded] = React.useState(false);
@@ -129,15 +157,18 @@ export default function MainPage() {
               {mockNewsData.map((news, index) => (
                 // Adjusting grid size to make cards smaller
                 <Grid key={index} size= {{xs: 12, sm: 6, md: news.variant === 'normal' ? 4 : 4}}>
-                  <NewsCard
-                    variant={news.variant === 'small' ? 'small' : 'normal'}
-                    bgColor={news.bgColor}
-                    image={news.image}
-                    date={news.date}
-                    title={news.title}
-                    quote={news.quote}
-                    onClick={() => handleNewsClick(news.title)}
-                  />
+                  <AnimatedCard index={index}>
+                    {/* Using the NewsCard component with the new props */}
+                    <NewsCard
+                      variant={news.variant === 'small' ? 'small' : 'normal'}
+                      bgColor={news.bgColor}
+                      image={news.image}
+                      date={news.date}
+                      title={news.title}
+                      quote={news.quote}
+                      onClick={() => handleNewsClick(news.title)}
+                    />
+                  </AnimatedCard>
                 </Grid>
               ))}
             </Grid>

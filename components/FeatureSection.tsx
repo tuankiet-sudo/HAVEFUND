@@ -39,10 +39,10 @@ export default function FeatureSection({ image, title, description, imagePositio
         <Grid size={{xs: 12, md: 6}}>
           <Fade in={inView} timeout={1500}>
             <Box>
-              <Typography variant="h4" component="h3" sx={{ fontWeight: 'bold', mb: 2 }}>
+              <Typography variant="h5" component="h3" sx={{ fontWeight: 'bold', mb: 2 }}>
                 {title}
               </Typography>
-              <Typography variant="body1" sx={{ fontSize: '1.1rem', lineHeight: 1.7, color: 'text.secondary' }}>
+              <Typography variant="body2" sx={{ fontSize: '1.1rem', lineHeight: 1.7, color: 'text.secondary' }}>
                 {description}
               </Typography>
             </Box>
