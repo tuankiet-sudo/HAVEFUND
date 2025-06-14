@@ -95,119 +95,119 @@ Năm 2025, nền kinh tế Việt Nam đang trên đà tăng trưởng bền v�
 
     `
   },
-//     {
-//     id: 'bao-cao-xu-huong-nen-kinh-te-the-gioi-2025',
-//     image: '/news-images/news2.jpg',
-//     title: 'Báo cáo chi tiết về xu hướng nền kinh tế thế giới năm 2025',
-//     date: '12/06/2025',
-//     references: `
-// 1\.**International Monetary Fund. (2025, April 22).** *World economic outlook: Navigating divergent global paths*. [https://www.imf.org/en/Publications/WEO/Issues/2025/04/22/world-economic-outlook-april-2025](https://www.imf.org/en/Publications/WEO/Issues/2025/04/22/world-economic-outlook-april-2025)
+    {
+    id: 'bao-cao-xu-huong-nen-kinh-te-the-gioi-2025',
+    image: '/news-images/news2.jpg',
+    title: 'Báo cáo chi tiết về xu hướng nền kinh tế thế giới năm 2025',
+    date: '12/06/2025',
+    references: `
+1\.**International Monetary Fund. (2025, April 22).** *World economic outlook: Navigating divergent global paths*. [https://www.imf.org/en/Publications/WEO/Issues/2025/04/22/world-economic-outlook-april-2025](https://www.imf.org/en/Publications/WEO/Issues/2025/04/22/world-economic-outlook-april-2025)
 
-// 2\.**Organisation for Economic Co-operation and Development. (2025).** *OECD economic outlook, volume 2025 issue 1*. [https://www.oecd.org/en/publications/oecd-economic-outlook-volume-2025-issue-1\_83363382-en.html](https://www.oecd.org/en/publications/oecd-economic-outlook-volume-2025-issue-1_83363382-en.html)
+2\.**Organisation for Economic Co-operation and Development. (2025).** *OECD economic outlook, volume 2025 issue 1*. [https://www.oecd.org/en/publications/oecd-economic-outlook-volume-2025-issue-1\_83363382-en.html](https://www.oecd.org/en/publications/oecd-economic-outlook-volume-2025-issue-1_83363382-en.html)
 
-// 3\.**United Nations, Department of Economic and Social Affairs. (2025).** *World economic situation and prospects as of mid-2025*. [https://www.un.org/development/desa/dpad/publication/world-economic-situation-and-prospects-as-of-mid-2025/](https://www.un.org/development/desa/dpad/publication/world-economic-situation-and-prospects-as-of-mid-2025/)
+3\.**United Nations, Department of Economic and Social Affairs. (2025).** *World economic situation and prospects as of mid-2025*. [https://www.un.org/development/desa/dpad/publication/world-economic-situation-and-prospects-as-of-mid-2025/](https://www.un.org/development/desa/dpad/publication/world-economic-situation-and-prospects-as-of-mid-2025/)
 
-// 4\.**Organisation for Economic Co-operation and Development. (2025).** *OECD economic outlook: Interim report March 2025*. [https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-march-2025\_89af4857-en.html](https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-march-2025_89af4857-en.html)
+4\.**Organisation for Economic Co-operation and Development. (2025).** *OECD economic outlook: Interim report March 2025*. [https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-march-2025\_89af4857-en.html](https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-march-2025_89af4857-en.html)
 
-// 5\.**European Commission. (2025).** *Spring 2025 economic forecast: Moderate growth amid global economic uncertainty*. [https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2025-economic-forecast-moderate-growth-amid-global-economic-uncertainty\_en](https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2025-economic-forecast-moderate-growth-amid-global-economic-uncertainty_en)
+5\.**European Commission. (2025).** *Spring 2025 economic forecast: Moderate growth amid global economic uncertainty*. [https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2025-economic-forecast-moderate-growth-amid-global-economic-uncertainty\_en](https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2025-economic-forecast-moderate-growth-amid-global-economic-uncertainty_en)
 
-// 6\.**Shalal, A. (2025, April 22).** IMF cuts growth forecasts for most countries in wake of century-high US tariffs. *Reuters.* [https://www.reuters.com/business/imf-cuts-growth-forecasts-most-countries-wake-century-high-us-tariffs-2025-04-22/](https://www.reuters.com/business/imf-cuts-growth-forecasts-most-countries-wake-century-high-us-tariffs-2025-04-22/)
-//     `,
-//     content: `
+6\.**Shalal, A. (2025, April 22).** IMF cuts growth forecasts for most countries in wake of century-high US tariffs. *Reuters.* [https://www.reuters.com/business/imf-cuts-growth-forecasts-most-countries-wake-century-high-us-tariffs-2025-04-22/](https://www.reuters.com/business/imf-cuts-growth-forecasts-most-countries-wake-century-high-us-tariffs-2025-04-22/)
+    `,
+    content: `
 
-// Nền kinh tế thế giới năm 2025 được dự báo sẽ đối mặt với sự tăng trưởng chậm lại so với các năm trước, với các dự báo từ các tổ chức quốc tế như Quỹ Tiền tệ Quốc tế (IMF), Ngân hàng Thế giới (World Bank), và các tổ chức khác như Morgan Stanley, S\&P Global, và OECD. Báo cáo này phân tích chi tiết các xu hướng chính, bao gồm dự báo tăng trưởng, các yếu tố ảnh hưởng, và tình hình các nền kinh tế lớn, dựa trên dữ liệu cập nhật đến ngày 10 tháng 6 năm 2025\.
+Nền kinh tế thế giới năm 2025 được dự báo sẽ đối mặt với sự tăng trưởng chậm lại so với các năm trước, với các dự báo từ các tổ chức quốc tế như Quỹ Tiền tệ Quốc tế (IMF), Ngân hàng Thế giới (World Bank), và các tổ chức khác như Morgan Stanley, S\&P Global, và OECD. Báo cáo này phân tích chi tiết các xu hướng chính, bao gồm dự báo tăng trưởng, các yếu tố ảnh hưởng, và tình hình các nền kinh tế lớn, dựa trên dữ liệu cập nhật đến ngày 10 tháng 6 năm 2025\.
 
-// #### 1. **Dự báo tăng trưởng toàn cầu**
+#### 1. **Dự báo tăng trưởng toàn cầu**
 
-// Các tổ chức quốc tế đưa ra các dự báo khác nhau về tăng trưởng GDP toàn cầu năm 2025, phản ánh sự phức tạp và bất ổn trong bối cảnh kinh tế hiện tại:
+Các tổ chức quốc tế đưa ra các dự báo khác nhau về tăng trưởng GDP toàn cầu năm 2025, phản ánh sự phức tạp và bất ổn trong bối cảnh kinh tế hiện tại:
 
-// * **IMF**: Theo báo cáo World Economic Outlook cập nhật vào tháng 4 năm 2025 , tăng trưởng toàn cầu được dự báo ở mức 2,8%, giảm 0,5 điểm phần trăm so với dự báo tháng 1 năm 2025 (3,3%). Điều chỉnh này phản ánh tác động của căng thẳng thương mại và bất ổn chính sách.  
-// * **Bank**: Báo cáo Global Economic Prospects từ tháng 1 năm 2025  dự báo tăng trưởng toàn cầu ở mức 2,7% cho cả năm 2025 và 2026, ổn định so với năm 2024 nhưng thấp hơn mức trung bình trước đại dịch COVID-19 (3,1%).  
-// * **Các tổ chức khác**: Morgan Stanley dự báo 2,9% .  
+* **IMF**: Theo báo cáo World Economic Outlook cập nhật vào tháng 4 năm 2025 , tăng trưởng toàn cầu được dự báo ở mức 2,8%, giảm 0,5 điểm phần trăm so với dự báo tháng 1 năm 2025 (3,3%). Điều chỉnh này phản ánh tác động của căng thẳng thương mại và bất ổn chính sách.  
+* **Bank**: Báo cáo Global Economic Prospects từ tháng 1 năm 2025  dự báo tăng trưởng toàn cầu ở mức 2,7% cho cả năm 2025 và 2026, ổn định so với năm 2024 nhưng thấp hơn mức trung bình trước đại dịch COVID-19 (3,1%).  
+* **Các tổ chức khác**: Morgan Stanley dự báo 2,9% .  
     
-// * **UN**: Báo cáo World Economic Situation and Prospects as of mid-2025 dự báo tăng trưởng toàn cầu giảm xuống 2,4%, thấp hơn 0,4 điểm phần trăm so với năm 2024 (2,9%).  
-// * Sự khác biệt trong các dự báo phản ánh các yếu tố như phương pháp luận, dữ liệu đầu vào, và mức độ đánh giá rủi ro, nhưng xu hướng chung là tăng trưởng toàn cầu đang chậm lại.
+* **UN**: Báo cáo World Economic Situation and Prospects as of mid-2025 dự báo tăng trưởng toàn cầu giảm xuống 2,4%, thấp hơn 0,4 điểm phần trăm so với năm 2024 (2,9%).  
+* Sự khác biệt trong các dự báo phản ánh các yếu tố như phương pháp luận, dữ liệu đầu vào, và mức độ đánh giá rủi ro, nhưng xu hướng chung là tăng trưởng toàn cầu đang chậm lại.
 
-// #### **2\. Lạm phát toàn cầu**
+#### **2\. Lạm phát toàn cầu**
 
-// **Lạm phát toàn cầu tiếp tục xu hướng giảm, nhưng tốc độ giảm chậm hơn dự kiến, với các dự báo cụ thể:**
+**Lạm phát toàn cầu tiếp tục xu hướng giảm, nhưng tốc độ giảm chậm hơn dự kiến, với các dự báo cụ thể:**
 
-// * **IMF**: Lạm phát toàn cầu giảm từ **5,8% năm 2024** xuống **4,3% năm 2025**, nhưng vẫn cao hơn mục tiêu của nhiều ngân hàng trung ương (2,0%).  
-// * **OECD**: Dự báo lạm phát ở các nền kinh tế phát triển đạt **2,0%**, gần mức mục tiêu, trong khi lạm phát G20 giảm từ **3,8% năm 2025** xuống **3,2% năm 2026**.  
-// * **UN**: Lạm phát toàn cầu giảm từ **4,0% năm 2024** xuống **3,4% năm 2025**, với các nền kinh tế phát triển ở mức **2,2%** và các nền kinh tế đang phát triển ở mức **5,1%**.  
-// * **Goldman Sachs**: Dự báo lạm phát giảm từ **5,4% năm 2024** xuống **3,8% năm 2025**, với gần 50% các nền kinh tế phát triển và 60% các nền kinh tế mới nổi đạt mục tiêu lạm phát của ngân hàng trung ương.
+* **IMF**: Lạm phát toàn cầu giảm từ **5,8% năm 2024** xuống **4,3% năm 2025**, nhưng vẫn cao hơn mục tiêu của nhiều ngân hàng trung ương (2,0%).  
+* **OECD**: Dự báo lạm phát ở các nền kinh tế phát triển đạt **2,0%**, gần mức mục tiêu, trong khi lạm phát G20 giảm từ **3,8% năm 2025** xuống **3,2% năm 2026**.  
+* **UN**: Lạm phát toàn cầu giảm từ **4,0% năm 2024** xuống **3,4% năm 2025**, với các nền kinh tế phát triển ở mức **2,2%** và các nền kinh tế đang phát triển ở mức **5,1%**.  
+* **Goldman Sachs**: Dự báo lạm phát giảm từ **5,4% năm 2024** xuống **3,8% năm 2025**, với gần 50% các nền kinh tế phát triển và 60% các nền kinh tế mới nổi đạt mục tiêu lạm phát của ngân hàng trung ương.
 
-// **Nguyên nhân giảm lạm phát**:Chính sách tiền tệ thắt chặt, đặc biệt từ Cục Dự trữ Liên bang Mỹ (Fed) và Ngân hàng Trung ương Châu Âu (ECB).Giá năng lượng giảm từ mức đỉnh năm 2023, mặc dù biến động vẫn tồn tại do căng thẳng địa chính trị (ví dụ: xung đột Trung Đông, gián đoạn ở Biển Đỏ).Nguồn cung lương thực dồi dào, với chỉ số giá lương thực của FAO giảm 3,4% so với năm 2023\.
+**Nguyên nhân giảm lạm phát**:Chính sách tiền tệ thắt chặt, đặc biệt từ Cục Dự trữ Liên bang Mỹ (Fed) và Ngân hàng Trung ương Châu Âu (ECB).Giá năng lượng giảm từ mức đỉnh năm 2023, mặc dù biến động vẫn tồn tại do căng thẳng địa chính trị (ví dụ: xung đột Trung Đông, gián đoạn ở Biển Đỏ).Nguồn cung lương thực dồi dào, với chỉ số giá lương thực của FAO giảm 3,4% so với năm 2023\.
 
-// **Rủi ro lạm phát:** Giá năng lượng và thực phẩm có thể tăng do thời tiết khắc nghiệt (El Niño, La Niña) và gián đoạn chuỗi cung ứng. Chính sách thuế quan của Mỹ dưới thời Tổng thống Trump có thể đẩy lạm phát ở Mỹ tăng trở lại vào cuối năm 2025, do chi phí nhập khẩu cao hơn.
+**Rủi ro lạm phát:** Giá năng lượng và thực phẩm có thể tăng do thời tiết khắc nghiệt (El Niño, La Niña) và gián đoạn chuỗi cung ứng. Chính sách thuế quan của Mỹ dưới thời Tổng thống Trump có thể đẩy lạm phát ở Mỹ tăng trở lại vào cuối năm 2025, do chi phí nhập khẩu cao hơn.
 
-// #### **3\. Thương mại toàn cầu**
+#### **3\. Thương mại toàn cầu**
 
-// **Thương mại toàn cầu đang phục hồi nhưng vẫn đối mặt với nhiều thách thức:**
+**Thương mại toàn cầu đang phục hồi nhưng vẫn đối mặt với nhiều thách thức:**
 
-// * **IMF**: Tăng trưởng thương mại toàn cầu dự kiến đạt **3,3% năm 2025**, tăng từ **3,1% năm 2024**, nhờ nhu cầu về sản phẩm công nghệ cao (AI, chuyển đổi năng lượng).  
-// * **World Bank**: Dự báo tăng trưởng thương mại đạt **2,5% năm 2024** và **3,3% năm 2025**, thấp hơn mức trung bình 4,9% giai đoạn 2000-2019, do các rào cản thương mại gia tăng (khoảng 3.000 hạn chế thương mại năm 2023 so với 1.100 năm 2019).  
-// * **WTO**: Chỉ số thương mại hàng hóa tháng 9/2024 đạt **103,0**, cho thấy xu hướng tăng trong quý 3/2024, nhưng triển vọng không chắc chắn do chính sách bảo hộ và đơn đặt hàng xuất khẩu giảm.
+* **IMF**: Tăng trưởng thương mại toàn cầu dự kiến đạt **3,3% năm 2025**, tăng từ **3,1% năm 2024**, nhờ nhu cầu về sản phẩm công nghệ cao (AI, chuyển đổi năng lượng).  
+* **World Bank**: Dự báo tăng trưởng thương mại đạt **2,5% năm 2024** và **3,3% năm 2025**, thấp hơn mức trung bình 4,9% giai đoạn 2000-2019, do các rào cản thương mại gia tăng (khoảng 3.000 hạn chế thương mại năm 2023 so với 1.100 năm 2019).  
+* **WTO**: Chỉ số thương mại hàng hóa tháng 9/2024 đạt **103,0**, cho thấy xu hướng tăng trong quý 3/2024, nhưng triển vọng không chắc chắn do chính sách bảo hộ và đơn đặt hàng xuất khẩu giảm.
 
-// **Yếu tố hỗ trợ:** Nhu cầu tăng về thiết bị bán dẫn, điện tử, và sản phẩm chuyển đổi năng lượng (pin, năng lượng tái tạo). Sự phục hồi tiêu dùng ở các nền kinh tế lớn như Mỹ, Trung Quốc, Brazil, và Ấn Độ.
+**Yếu tố hỗ trợ:** Nhu cầu tăng về thiết bị bán dẫn, điện tử, và sản phẩm chuyển đổi năng lượng (pin, năng lượng tái tạo). Sự phục hồi tiêu dùng ở các nền kinh tế lớn như Mỹ, Trung Quốc, Brazil, và Ấn Độ.
 
-// #### **4\. Chính sách tiền tệ và tài khóa**
+#### **4\. Chính sách tiền tệ và tài khóa**
 
-// * **Chính sách tiền tệ**:
+* **Chính sách tiền tệ**:
 
-// **Các ngân hàng trung ương lớn (Fed, ECB, BOJ) đang chuyển từ thắt chặt sang nới lỏng dần, nhưng lộ trình khác nhau:**
+**Các ngân hàng trung ương lớn (Fed, ECB, BOJ) đang chuyển từ thắt chặt sang nới lỏng dần, nhưng lộ trình khác nhau:**
 
-// * **Fed (Mỹ)**: Dự kiến tạm dừng cắt giảm lãi suất vào giữa năm 2025 do áp lực lạm phát từ thuế quan. Lãi suất hiện tại (tháng 9/2024) đã giảm lần đầu tiên kể từ 2023\.  
-// * **ECB (Châu Âu)**: Tiếp tục cắt giảm lãi suất vào năm 2025, với lạm phát khu vực Eurozone giảm xuống **2,3%**.  
-// * **BOJ (Nhật Bản)**: Dự kiến tăng lãi suất hai lần vào năm 2025, với lạm phát điều chỉnh từ **2,1% xuống 1,9%** cho năm tài chính 2025, nhằm thoát khỏi giảm phát kéo dài.
+* **Fed (Mỹ)**: Dự kiến tạm dừng cắt giảm lãi suất vào giữa năm 2025 do áp lực lạm phát từ thuế quan. Lãi suất hiện tại (tháng 9/2024) đã giảm lần đầu tiên kể từ 2023\.  
+* **ECB (Châu Âu)**: Tiếp tục cắt giảm lãi suất vào năm 2025, với lạm phát khu vực Eurozone giảm xuống **2,3%**.  
+* **BOJ (Nhật Bản)**: Dự kiến tăng lãi suất hai lần vào năm 2025, với lạm phát điều chỉnh từ **2,1% xuống 1,9%** cho năm tài chính 2025, nhằm thoát khỏi giảm phát kéo dài.
 
-// \=\> Các nền kinh tế mới nổi duy trì chính sách tiền tệ thận trọng, tập trung kiểm soát lạm phát và ổn định tỷ giá.
+\=\> Các nền kinh tế mới nổi duy trì chính sách tiền tệ thận trọng, tập trung kiểm soát lạm phát và ổn định tỷ giá.
 
-// #### **5.Các yếu tố ảnh hưởng**
+#### **5.Các yếu tố ảnh hưởng**
 
-// **Nhiều yếu tố đang tác động đến triển vọng kinh tế toàn cầu, bao gồm:**
+**Nhiều yếu tố đang tác động đến triển vọng kinh tế toàn cầu, bao gồm:**
 
-// * **Căng thẳng thương mại**: Một sự kiện nổi bật là việc Tổng thống Mỹ Donald Trump công bố thuế quan phổ quát đối với hầu hết các đối tác thương mại, dẫn đến IMF điều chỉnh giảm dự báo tăng trưởng toàn cầu. Theo bài báo từ Reuters , thuế quan này được coi là "cú sốc tiêu cực lớn" đối với tăng trưởng, với dự báo tăng trưởng thương mại toàn cầu giảm xuống 1,7% vào năm 2025, thấp hơn đáng kể so với năm 2024\.  
-// * **Bất ổn chính sách**: OECD nhấn mạnh rằng sự gia tăng rào cản thương mại và bất ổn chính sách đang có tác động tiêu cực đáng kể đến triển vọng tăng trưởng. Điều này bao gồm các chính sách tiền tệ thắt chặt và sự không chắc chắn về chính sách tài khóa.  
-// * **Lạm phát**: IMF dự báo lạm phát toàn cầu sẽ giảm xuống 4,3% vào năm 2025 và 3,6% vào năm 2026, nhưng tốc độ giảm chậm hơn so với dự báo trước đó, với các điều chỉnh tăng đáng kể cho các nền kinh tế tiên tiến như Mỹ   
-// * Rủi ro địa chính trị: World Bank và OECD đều đề cập đến các rủi ro từ căng thẳng địa chính trị, như xung đột thương mại và bất ổn chính trị, có thể làm giảm niềm tin của nhà đầu tư và hạn chế dòng vốn
+* **Căng thẳng thương mại**: Một sự kiện nổi bật là việc Tổng thống Mỹ Donald Trump công bố thuế quan phổ quát đối với hầu hết các đối tác thương mại, dẫn đến IMF điều chỉnh giảm dự báo tăng trưởng toàn cầu. Theo bài báo từ Reuters , thuế quan này được coi là "cú sốc tiêu cực lớn" đối với tăng trưởng, với dự báo tăng trưởng thương mại toàn cầu giảm xuống 1,7% vào năm 2025, thấp hơn đáng kể so với năm 2024\.  
+* **Bất ổn chính sách**: OECD nhấn mạnh rằng sự gia tăng rào cản thương mại và bất ổn chính sách đang có tác động tiêu cực đáng kể đến triển vọng tăng trưởng. Điều này bao gồm các chính sách tiền tệ thắt chặt và sự không chắc chắn về chính sách tài khóa.  
+* **Lạm phát**: IMF dự báo lạm phát toàn cầu sẽ giảm xuống 4,3% vào năm 2025 và 3,6% vào năm 2026, nhưng tốc độ giảm chậm hơn so với dự báo trước đó, với các điều chỉnh tăng đáng kể cho các nền kinh tế tiên tiến như Mỹ   
+* Rủi ro địa chính trị: World Bank và OECD đều đề cập đến các rủi ro từ căng thẳng địa chính trị, như xung đột thương mại và bất ổn chính trị, có thể làm giảm niềm tin của nhà đầu tư và hạn chế dòng vốn
 
-// #### **6.Tình hình các nền kinh tế lớn**
+#### **6.Tình hình các nền kinh tế lớn**
 
-// Dưới đây là bảng chi tiết dự báo tăng trưởng cho một số nền kinh tế lớn vào năm 2025, dựa trên báo cáo của IMF
+Dưới đây là bảng chi tiết dự báo tăng trưởng cho một số nền kinh tế lớn vào năm 2025, dựa trên báo cáo của IMF
 
-// | Nền kinh tế  | Dự báo tăng trưởng 2025 (%)  | Ghi chú  |
-// | :---- | :---- | :---- |
-// | **Toàn cầu** | 2,8% | Giảm 0,5 điểm phần trăm so với dự báo tháng 1/2025  |
-// | **Hoa Kỳ**  | 1,8% | Giảm 0,9 điểm phần trăm, nguy cơ suy thoái tăng lên 37%  |
-// | **Trung Quốc** | 4,0% | Giảm 0,6 điểm phần trăm so với dự báo trước  |
-// | **Khu Vực Đồng Euro** | 0,8% | Giảm 0,2 điểm phần trăm, với Tây Ban Nha đạt 2,5% (tăng 0,2 điểm phần trăm)  |
-// | **Đức** | 0,0% | Giảm 0,3 điểm phần trăm  |
-// | **Anh** | 1,1% | Giảm 0,5 điểm phần trăm  |
-// | **Nhật Bản** | 0,6% | Giảm 0,5 điểm phần trăm  |
-// | **Canada** | 1,4% | Giảm từ 2,0% trong dự báo tháng 1/2025  |
-// | **Mexico** | \-0,3% | Tăng trưởng âm, giảm 1,7 điểm phần trăm so với dự báo trước  |
+| Nền kinh tế  | Dự báo tăng trưởng 2025 (%)  | Ghi chú  |
+| :---- | :---- | :---- |
+| **Toàn cầu** | 2,8% | Giảm 0,5 điểm phần trăm so với dự báo tháng 1/2025  |
+| **Hoa Kỳ**  | 1,8% | Giảm 0,9 điểm phần trăm, nguy cơ suy thoái tăng lên 37%  |
+| **Trung Quốc** | 4,0% | Giảm 0,6 điểm phần trăm so với dự báo trước  |
+| **Khu Vực Đồng Euro** | 0,8% | Giảm 0,2 điểm phần trăm, với Tây Ban Nha đạt 2,5% (tăng 0,2 điểm phần trăm)  |
+| **Đức** | 0,0% | Giảm 0,3 điểm phần trăm  |
+| **Anh** | 1,1% | Giảm 0,5 điểm phần trăm  |
+| **Nhật Bản** | 0,6% | Giảm 0,5 điểm phần trăm  |
+| **Canada** | 1,4% | Giảm từ 2,0% trong dự báo tháng 1/2025  |
+| **Mexico** | \-0,3% | Tăng trưởng âm, giảm 1,7 điểm phần trăm so với dự báo trước  |
 
-// Bảng trên cho thấy sự khác biệt rõ rệt giữa các nền kinh tế, với Mỹ và Mexico đối mặt với thách thức lớn hơn, trong khi Trung Quốc vẫn duy trì tăng trưởng tương đối ổn định so với các nền kinh tế tiên tiến.
+Bảng trên cho thấy sự khác biệt rõ rệt giữa các nền kinh tế, với Mỹ và Mexico đối mặt với thách thức lớn hơn, trong khi Trung Quốc vẫn duy trì tăng trưởng tương đối ổn định so với các nền kinh tế tiên tiến.
 
-// #### **7.Xu hướng ngành và khu vực**
+#### **7.Xu hướng ngành và khu vực**
 
-// * **Thương mại toàn cầu**: Tăng trưởng thương mại toàn cầu dự kiến chỉ đạt 1,7% vào năm 2025, theo IMF, thấp hơn đáng kể so với năm 2024, do tác động của thuế quan và rào cản thương mại
+* **Thương mại toàn cầu**: Tăng trưởng thương mại toàn cầu dự kiến chỉ đạt 1,7% vào năm 2025, theo IMF, thấp hơn đáng kể so với năm 2024, do tác động của thuế quan và rào cản thương mại
 
-// Khu vực đang phát triển: World Bank dự báo tăng trưởng ở các nền kinh tế đang phát triển đạt khoảng 4% vào năm 2025, nhưng vẫn yếu hơn trước đại dịch, với các rủi ro như nợ công tăng và xung đột địa chính trị
+Khu vực đang phát triển: World Bank dự báo tăng trưởng ở các nền kinh tế đang phát triển đạt khoảng 4% vào năm 2025, nhưng vẫn yếu hơn trước đại dịch, với các rủi ro như nợ công tăng và xung đột địa chính trị
 
-// Khu vực tiên tiến: Các nền kinh tế tiên tiến như EU và Nhật Bản đối mặt với tăng trưởng thấp, với EU dự kiến đạt 1,1% và khu vực đồng Euro 0,9%, theo European Commission's Spring 2025 Economic Forecast
+Khu vực tiên tiến: Các nền kinh tế tiên tiến như EU và Nhật Bản đối mặt với tăng trưởng thấp, với EU dự kiến đạt 1,1% và khu vực đồng Euro 0,9%, theo European Commission's Spring 2025 Economic Forecast
 
-// #### **8.Thách thức và rủi ro**
+#### **8.Thách thức và rủi ro**
 
-// Theo OECD, việc tăng cường rào cản thương mại có thể làm giảm tăng trưởng kinh tế toàn cầu và đẩy lạm phát lên cao do gián đoạn chuỗi cung ứng và tăng chi phí. Rủi ro tài chính, như định giá lại thị trường khi tăng trưởng chậm, gây áp lực lớn lên các nền kinh tế dễ tổn thương. Ngoài ra, Ngân hàng Thế giới nhấn mạnh biến đổi khí hậu và xung đột địa chính trị là mối đe dọa dài hạn, làm suy giảm năng suất, tăng chi phí phục hồi và gây bất ổn nguồn cung. Để ứng phó, cần thúc đẩy thương mại tự do, ổn định tài chính, đầu tư bền vững và giảm căng thẳng địa chính trị.
+Theo OECD, việc tăng cường rào cản thương mại có thể làm giảm tăng trưởng kinh tế toàn cầu và đẩy lạm phát lên cao do gián đoạn chuỗi cung ứng và tăng chi phí. Rủi ro tài chính, như định giá lại thị trường khi tăng trưởng chậm, gây áp lực lớn lên các nền kinh tế dễ tổn thương. Ngoài ra, Ngân hàng Thế giới nhấn mạnh biến đổi khí hậu và xung đột địa chính trị là mối đe dọa dài hạn, làm suy giảm năng suất, tăng chi phí phục hồi và gây bất ổn nguồn cung. Để ứng phó, cần thúc đẩy thương mại tự do, ổn định tài chính, đầu tư bền vững và giảm căng thẳng địa chính trị.
 
-// #### **9.Kết luận**
+#### **9.Kết luận**
 
-// Nền kinh tế thế giới năm 2025 được dự báo sẽ tăng trưởng chậm lại, với mức tăng trưởng toàn cầu dao động từ 2,7% đến 2,8%, chịu ảnh hưởng lớn từ căng thẳng thương mại, bất ổn chính sách, và lạm phát giảm chậm. Các nền kinh tế lớn như Mỹ và Trung Quốc cho thấy sự khác biệt rõ rệt, trong khi các khu vực như EU và Nhật Bản đối mặt với thách thức tăng trưởng thấp. Các nhà hoạch định chính sách cần tập trung vào hợp tác quốc tế và cải cách để giảm thiểu rủi ro và thúc đẩy tăng trưởng bền vững.
+Nền kinh tế thế giới năm 2025 được dự báo sẽ tăng trưởng chậm lại, với mức tăng trưởng toàn cầu dao động từ 2,7% đến 2,8%, chịu ảnh hưởng lớn từ căng thẳng thương mại, bất ổn chính sách, và lạm phát giảm chậm. Các nền kinh tế lớn như Mỹ và Trung Quốc cho thấy sự khác biệt rõ rệt, trong khi các khu vực như EU và Nhật Bản đối mặt với thách thức tăng trưởng thấp. Các nhà hoạch định chính sách cần tập trung vào hợp tác quốc tế và cải cách để giảm thiểu rủi ro và thúc đẩy tăng trưởng bền vững.
 
-//     `
-//   },
+    `
+  },
 //     {
 //     id: 'nganh-cong-nghe-thong-tin',
 //     image: '/news-images/news3.jpg',
