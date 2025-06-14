@@ -5,6 +5,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer'; // Import the new Footer component
 import MainPage from '../pages/MainPage';
 import AboutUsPage from '../pages/AboutUsPage';
+import CustomerPage from '../pages/CustomerPage';
+import NewsPage from '../pages/NewsPage';
 
 const ScrollToAnchor = () => {
   const { pathname, hash } = useLocation();
@@ -56,7 +58,8 @@ export default function App() {
             <Routes>
               <Route path="/" element={<MainPage />} />
               <Route path="/about-us" element={<AboutUsPage />} />
-              {/* <Route path="/customer" element={<CustomerPage />} /> */}
+              <Route path="/news/:articleId" element={<NewsPage />} />
+              <Route path="/customer" element={<CustomerPage />} />
               {/* <Route path="/advisors" element={<AdvisorsPage />} /> */}
               {/* <Route path="/portfolio-investment" element={<PortfolioPage />} /> */}
             </Routes>

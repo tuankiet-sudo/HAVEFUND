@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Box, Typography, Container, Divider, Fade, Slide, Grid } from '@mui/material';
 import { useInView } from 'react-intersection-observer';
 import NewsCard from '../components/NewsCard';
+import { useNavigate } from 'react-router-dom';
+import { articles } from '../src/data/articles';
 
 // Updated mock data to include card variants and colors
 const mockNewsData = [
@@ -76,14 +78,15 @@ const AnimatedCard = ({ children, index }: { children: React.ReactNode; index: n
 };
 
 export default function MainPage() {
+  const navigate = useNavigate();
   const [loaded, setLoaded] = React.useState(false);
 
   React.useEffect(() => {
     setLoaded(true);
   }, []);
 
-  const handleNewsClick = (title: string) => {
-    console.log(`Navigating to news article: ${title}`);
+  const handleNewsClick = (articleId: string) => {
+    navigate(`/news/${articleId}`); // Navigate to the dynamic article route
   };
 
   return (
@@ -154,19 +157,19 @@ export default function MainPage() {
           {/* White container for the news cards */}
           <Box sx={{ backgroundColor: 'white', p: {xs: 2, md: 4}, borderRadius: 2, boxShadow: 1 }}>
             <Grid container spacing={4}>
-              {mockNewsData.map((news, index) => (
+              {articles.map((news, index) => (
                 // Adjusting grid size to make cards smaller
-                <Grid key={index} size= {{xs: 12, sm: 6, md: news.variant === 'normal' ? 4 : 4}}>
+                <Grid key={index} size= {{xs: 12, sm: 6, md: 4}}>
                   <AnimatedCard index={index}>
                     {/* Using the NewsCard component with the new props */}
                     <NewsCard
-                      variant={news.variant === 'small' ? 'small' : 'normal'}
-                      bgColor={news.bgColor}
+                      variant='normal'
+                      bgColor='#0D47A1'
                       image={news.image}
                       date={news.date}
                       title={news.title}
-                      quote={news.quote}
-                      onClick={() => handleNewsClick(news.title)}
+                      quote='Việt Nam đã trải qua một quá trình chuyển đổi kinh tế đáng kể kể từ khi triển khai chính sách Đổi Mới vào năm 1986'
+                      onClick={() => handleNewsClick(news.id)}
                     />
                   </AnimatedCard>
                 </Grid>

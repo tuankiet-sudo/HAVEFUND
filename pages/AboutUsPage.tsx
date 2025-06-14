@@ -1,12 +1,11 @@
-// import * as React from 'react';
-import { Box, Typography, Container, List, ListItem, ListItemIcon, ListItemText, Paper } from '@mui/material';
+import * as React from 'react';
+import { Box, Typography, Container, List, ListItem, ListItemIcon, ListItemText, Paper, Grid, Fade } from '@mui/material';
 import BusinessIcon from '@mui/icons-material/Business';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import LanguageIcon from '@mui/icons-material/Language';
 import LabelIcon from '@mui/icons-material/Label';
 import FeatureSection from '../components/FeatureSection';
-import { Grid } from '@mui/material';
 
 // --- Data for Section 2 ---
 const servicesData = [
@@ -33,6 +32,11 @@ const servicesData = [
 ];
 
 export default function AboutUsPage() {
+    const [loaded, setLoaded] = React.useState(false);
+
+    React.useEffect(() => {
+      setLoaded(true);
+    }, []);
   const companyInfo = [
     { icon: <BusinessIcon color="primary" />, primary: "Company name", secondary: "HAVEFUND (HEF)" },
     { icon: <LabelIcon color="primary" />, primary: "Slogan", secondary: "Grow More. Risk Less. HaveFund." },
@@ -43,12 +47,46 @@ export default function AboutUsPage() {
 
   return (
     <Box>
+      <Box
+        sx={{
+          pt: '110px', // Padding to clear the fixed header
+          height: '60vh',
+          minHeight: '400px',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1582647509711-c8aa8a8bda71?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          position: 'relative',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: 'white',
+          '&::before': { // This creates a dark overlay for text readability
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+          },
+        }}
+      >
+        <Container>
+          <Fade in={loaded} timeout={1500}>
+            <Typography
+              variant="h1"
+              component="h1"
+              align="center"
+              sx={{ fontWeight: 'bold', zIndex: 1, position: 'relative' }}
+            >
+              About Us
+            </Typography>
+          </Fade>
+        </Container>
+      </Box>
       {/* Section 1: Our Company */}
       <Box id="our-company" sx={{ pt: '120px', pb: 8, backgroundColor: 'white' }}>
         <Container>
-          <Typography variant="h3" align="center" sx={{ fontWeight: 'bold', mb: 6 }}>
-            About HAVEFUND
-          </Typography>
           <Grid container spacing={6} alignItems="center">
             <Grid size={{xs: 12, md: 6}}>
               <Box component="img" src="/Logo.png" alt="Our Company" sx={{ width: '100%', borderRadius: 2, boxShadow: 3 }} />
