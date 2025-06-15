@@ -52,6 +52,7 @@ export default function App() {
           minHeight: '100vh',
           display: 'flex',
           flexDirection: 'column', // Make the main box a flex container
+          px: { xs: 1, sm: 0 }
         }}>
           <CssBaseline />
           <Header />

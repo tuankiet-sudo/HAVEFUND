@@ -11,15 +11,14 @@ interface FeatureSectionProps {
 
 export default function FeatureSection({ image, title, description, imagePosition = 'left' }: FeatureSectionProps) {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Only trigger the animation once
-    threshold: 0.2,    // Trigger when 20% of the element is visible
+    triggerOnce: true,
+    threshold: 0.2,
   });
 
   return (
     <Box ref={ref} sx={{ py: { xs: 4, md: 6 } }}>
-      <Grid container spacing={6} alignItems="center" direction={imagePosition === 'left' ? 'row' : 'row-reverse'}>
-        {/* Image Column */}
-        <Grid size={{xs: 12, md: 6}}>
+      <Grid container spacing={6} alignItems="center" direction={{ xs: 'column-reverse', md: (imagePosition === 'left' ? 'row' : 'row-reverse') }}>
+        <Grid size={{ xs: 12, md: 6}}>
           <Slide direction={imagePosition === 'left' ? 'right' : 'left'} in={inView} timeout={1000}>
             <Box
               component="img"
@@ -34,15 +33,13 @@ export default function FeatureSection({ image, title, description, imagePositio
             />
           </Slide>
         </Grid>
-
-        {/* Text Column */}
         <Grid size={{xs: 12, md: 6}}>
           <Fade in={inView} timeout={1500}>
             <Box>
-              <Typography variant="h5" component="h3" sx={{ fontWeight: 'bold', mb: 2 }}>
+              <Typography variant="h5" component="h3" sx={{ fontWeight: 'bold', mb: 2, textAlign: { xs: 'center', md: 'left' } }}>
                 {title}
               </Typography>
-              <Typography variant="body2" sx={{ fontSize: '1.1rem', lineHeight: 1.7, color: 'text.secondary' }}>
+              <Typography variant="body1" sx={{ fontSize: '1.1rem', lineHeight: 1.7, color: 'text.secondary', textAlign: { xs: 'center', md: 'left' } }}>
                 {description}
               </Typography>
             </Box>
